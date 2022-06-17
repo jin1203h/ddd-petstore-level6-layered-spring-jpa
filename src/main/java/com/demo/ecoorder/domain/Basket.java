@@ -15,4 +15,17 @@ public class Basket {
     @OneToMany
     List<BasketItem> basketItem;
     Integer totalPrice;
+    public List<BasketItem> getBasketItem() {
+        return basketItem;
+    }
+    public void setBasketItem(List<BasketItem> basketItem) {
+        this.basketItem = basketItem;
+    }
+    public Integer getTotalPrice() {
+        return totalPrice;
+    }
+    public void setTotalPrice(Integer totalPrice) {
+        this.totalPrice = totalPrice;
+    }
+    
 }
